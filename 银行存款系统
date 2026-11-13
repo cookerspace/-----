@@ -24,6 +24,5 @@ while n!=0:
        print(f"取出：{b}")
        n=int(input())
     elif n==1:
-       zong=zong+a-b
        print(f"总存款：{zong}")
        n=int(input())
