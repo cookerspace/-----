@@ -1,0 +1,27 @@
+print("记账系统")
+print("1.总存款")
+print("2.存入")
+print("3.取出")
+print("退出：0")
+
+a=0
+b=0
+zong=0
+n=int(input())
+if n==0:
+    print("退出系统") 
+    import sys
+    sys.exit()  
+while n!=0:
+    if n==2:
+       a=int(input("请输入存入金额："))
+       print(f"存入：{a}")
+       n=int(input())
+    if n==3:
+       b=int(input("请输入取出金额："))
+       print(f"取出：{b}")
+       n=int(input())
+    if n==1:
+       zong=zong+a-b
+       print(f"总存款：{zong}")
+       n=int(input())
