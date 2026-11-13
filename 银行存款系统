@@ -15,13 +15,15 @@ if n==0:
 while n!=0:
     if n==2:
        a=int(input("请输入存入金额："))
+       zong=zong+a-b
        print(f"存入：{a}")
        n=int(input())
-    if n==3:
+    elif n==3:
        b=int(input("请输入取出金额："))
+       zong=zong+a-b
        print(f"取出：{b}")
        n=int(input())
-    if n==1:
+    elif n==1:
        zong=zong+a-b
        print(f"总存款：{zong}")
        n=int(input())
